@@ -5,7 +5,7 @@ Step by step:
 2) Download F-Droid
 3) Allow F-Droid to install programs
 4) Download Termux
-5) Open Termux and enter "git clone https://github.com/terafyde873/scripts.git"
+5) Open Termux and enter "git clone https://github.com/ahenven/xmrig.git"
 6) Enter "cd scripts"
 7) Enter "chmod u+x script.sh"
 8) Enter "./setup.sh" and allow to finish.
@@ -16,3 +16,6 @@ Step by step:
 
 Tested on a lot of phones, sometimes CMake cannot complile, mostly on older ones.
 I do not recommend mining on devices that do not have a 64bit Chipset and OS. Without both, expect single digits.
+
+You might experience frequent crashing, this can be due to overheating, too much CPU usage or not enough system resources.
+The solution to all is to go into the config.json file and remove cores starting from the left side. Mobile phone processors usually have slower units in the first numbers.
