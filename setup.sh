@@ -12,7 +12,7 @@ sudo apt upgrade -y
 echo "Installing git, build-essential, and cmake..."
 sudo apt install -y git build-essential cmake
 
-# Clone the xmrig repository
+# Clone the xmrig repository. Replace link with https://github.com/MoneroOcean/xmrig.git for algo switching
 echo "Cloning the xmrig repository..."
 git clone https://github.com/xmrig/xmrig.git
 
