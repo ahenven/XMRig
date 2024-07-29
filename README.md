@@ -19,3 +19,7 @@ I do not recommend mining on devices that do not have a 64bit Chipset and OS. Wi
 
 You might experience frequent crashing, this can be due to overheating, too much CPU usage or not enough system resources.
 The solution to all is to go into the config.json file and remove cores starting from the left side. Mobile phone processors usually have slower units in the first numbers.
+
+In the config.json, the coin is manually set to "xmr". This is to prevent errors on some pools. If mining other coins, you can remove.
+
+You can modify the shell.sh to point git to clone MO and compile this instead. You will likely need to disable at least Panthera. Also, set the algo bench time to 20+ seconds to allow for accurate benchmarking.
