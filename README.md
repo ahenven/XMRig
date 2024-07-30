@@ -5,7 +5,7 @@ Step by step:
 2) Download F-Droid
 3) Allow F-Droid to install programs
 4) Download Termux
-5) Open Termux and enter "git clone https://github.com/ahenven/xmrig.git"
+5) Open Termux and enter "git clone https://github.com/ahenven/scripts.git"
 6) Enter "cd scripts"
 7) Enter "chmod u+x script.sh"
 8) Enter "./setup.sh" and allow to finish.
