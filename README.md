@@ -11,9 +11,8 @@ Step by step:
 8) Following that, enter "chmod u+x script.sh"
 9) To run, enter "./setup.sh" and allow to finish.
 10) Once finished, enter "cd"
-11) Enter into "cd xmrig/build"
-12) Enter "nano config.json", here, modify the basic config file. (CTRL+X, Y, Enter, to exit out of nano)
-13) Finally, enter "./xmrig" and you should be mining.
+11) Enter "nano config.json", here, modify the basic config file. (CTRL+X, Y, Enter, to exit out of nano)
+12) Finally, enter "./xmrig" and you should be mining.
 
 Tested on a lot of phones, sometimes CMake cannot complile, mostly on older ones.
 I do not recommend mining on devices that do not have a 64bit Chipset and OS. Without both, expect single digits.
