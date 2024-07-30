@@ -36,4 +36,13 @@ mv xmrig ~/
 echo "Moving config.json to home directory..."
 mv ~/scripts/config.json ~/
 
+# Move to home dir
+echo "Moving to home directory"
+cd
+
+# Cleaning junk
+echo "Removing scripts"
+rm -rf /scripts
+
+echo
 echo "Setup complete."
