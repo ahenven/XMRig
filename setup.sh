@@ -12,12 +12,16 @@ sudo apt upgrade -y
 echo "Installing git, build-essential, and cmake..."
 sudo apt install -y git build-essential cmake
 
+# Clone the scripts repository
+echo "Cloning the scripts repository..."
+git clone https://github.com/your-repo/scripts.git
+
 # Clone the xmrig repository. Replace link with https://github.com/MoneroOcean/xmrig.git for algo switching
 echo "Cloning the xmrig repository..."
 git clone https://github.com/xmrig/xmrig.git
 
-# Create a build directory
-echo "Creating build directory..."
+# Create a build directory inside xmrig
+echo "Creating build directory inside xmrig..."
 mkdir -p xmrig/build
 
 # Change to the build directory
@@ -28,16 +32,12 @@ cd xmrig/build
 echo "Running cmake and make..."
 cmake .. -DWITH_HWLOC=OFF && make -j$(nproc)
 
-# Move config.json to the build directory
-echo "Moving config.json..."
-mv ../../scripts/config.json .
+# Move the built xmrig from /scripts/xmrig/build to ~/
+echo "Moving built xmrig to home directory..."
+mv xmrig ~/
 
-# Ensure the target directory exists
-echo "Ensuring target directory exists..."
-mkdir -p ../../scripts/xmrig
-
-# Move the contents of the build directory to the directory behind scripts
-echo "Moving build contents to the target directory..."
-mv * ../../scripts/xmrig/
+# Move config.json to the home directory
+echo "Moving config.json to home directory..."
+mv ~/scripts/config.json ~/
 
 echo "Setup complete."
