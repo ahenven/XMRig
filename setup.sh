@@ -42,7 +42,7 @@ cd
 
 # Cleaning junk
 echo "Removing scripts"
-rm -rf /scripts
+rm -rf ~/scripts
 
 echo
 echo "Setup complete."
