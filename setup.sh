@@ -32,9 +32,12 @@ cmake .. -DWITH_HWLOC=OFF && make -j$(nproc)
 echo "Moving config.json..."
 mv ../../scripts/config.json .
 
+# Ensure the target directory exists
+echo "Ensuring target directory exists..."
+mkdir -p ../../scripts/xmrig
+
 # Move the contents of the build directory to the directory behind scripts
-echo "Moving build contents to the parent directory behind scripts..."
-cd ..
-mv build/* ../scripts/xmrig/
+echo "Moving build contents to the target directory..."
+mv * ../../scripts/xmrig/
 
 echo "Setup complete."
